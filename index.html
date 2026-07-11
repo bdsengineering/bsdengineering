@@ -23,7 +23,30 @@ padding:20px;
 header img{
 width:90px;
 }
+<section class="slider">
+  <img id="slide" src="images/Foundation1.jpg" alt="BSD Engineering" style="width:100%;height:450px;object-fit:cover;">
+</section>
 
+<script>
+const images=[
+"images/Foundation1.jpg",
+"images/Foundation2.jpg",
+"images/Mat Foundation .jpg",
+"images/Slab.jpg",
+"images/Slab2.jpg",
+"images/Pump Road.jpg",
+"images/Stair.jpg",
+"images/Kitchen.jpg",
+"images/Engineer.jpg"
+];
+
+let i=0;
+
+setInterval(function(){
+i=(i+1)%images.length;
+document.getElementById("slide").src=images[i];
+},3000);
+</script>
 nav{
 background:#fff;
 padding:15px;
